@@ -1,0 +1,3 @@
+../lib/hal/Core/Src/main.c:82:6:SystemClock_Config	4
+../lib/hal/Core/Src/main.c:144:6:PeriphCommonClock_Config	2
+../lib/hal/Core/Src/main.c:179:6:Error_Handler	1

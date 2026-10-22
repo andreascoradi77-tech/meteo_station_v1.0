@@ -1,0 +1,2 @@
+../lib/libleguan/include/common/intrinsics.h:70:13:LEGUAN_Unreachable	4	static
+../source/main.c:15:5:main	64	static

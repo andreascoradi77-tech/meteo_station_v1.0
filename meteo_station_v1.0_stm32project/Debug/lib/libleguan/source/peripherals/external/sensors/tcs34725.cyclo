@@ -1,0 +1,9 @@
+../lib/libleguan/include/common/intrinsics.h:70:13:LEGUAN_Unreachable	0
+../lib/libleguan/source/peripherals/external/sensors/tcs34725.c:89:17:SetIntegrationTime	2
+../lib/libleguan/source/peripherals/external/sensors/tcs34725.c:95:17:SetGain	2
+../lib/libleguan/source/peripherals/external/sensors/tcs34725.c:101:17:Enable	2
+../lib/libleguan/source/peripherals/external/sensors/tcs34725.c:111:17:Disable	2
+../lib/libleguan/source/peripherals/external/sensors/tcs34725.c:120:17:StartConversion	2
+../lib/libleguan/source/peripherals/external/sensors/tcs34725.c:129:13:IsDone	2
+../lib/libleguan/source/peripherals/external/sensors/tcs34725.c:138:10:TC3A227E_Init	5
+../lib/libleguan/source/peripherals/external/sensors/tcs34725.c:148:10:TC3A227E_GetColor	12

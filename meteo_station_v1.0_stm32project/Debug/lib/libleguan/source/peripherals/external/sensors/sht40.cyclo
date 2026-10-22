@@ -1,0 +1,5 @@
+../lib/libleguan/include/common/intrinsics.h:70:13:LEGUAN_Unreachable	0
+../lib/libleguan/source/peripherals/external/sensors/sht40.c:51:10:SHT40_Init	2
+../lib/libleguan/source/peripherals/external/sensors/sht40.c:59:17:GetSensorData	4
+../lib/libleguan/source/peripherals/external/sensors/sht40.c:83:10:SHT40_GetTemperature	3
+../lib/libleguan/source/peripherals/external/sensors/sht40.c:97:10:SHT40_GetHumidity	3

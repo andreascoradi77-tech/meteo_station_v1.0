@@ -1,0 +1,44 @@
+../lib/libleguan/include/common/intrinsics.h:70:13:void LEGUAN_Unreachable()	4	static
+../source/gui.cpp:30:5:Widget::Widget(uint16_t, uint16_t, uint16_t, uint16_t)	24	static
+../source/gui.cpp:32:13:Widget::~Widget()	16	static
+../source/gui.cpp:32:13:virtual Widget::~Widget()	16	static
+../source/gui.cpp:35:18:virtual bool Widget::handleTouch(uint16_t, uint16_t)	16	static
+../source/gui.cpp:37:10:bool Widget::contains(uint16_t, uint16_t) const	16	static
+../source/gui.cpp:41:10:void Widget::setVisible(bool)	16	static
+../source/gui.cpp:54:5:Label::Label(uint16_t, uint16_t, uint16_t, uint16_t, const char*, color_t)	40	static
+../source/gui.cpp:61:10:virtual void Label::draw()	16	static
+../source/gui.cpp:77:5:ValueDisplay::ValueDisplay(uint16_t, uint16_t, uint16_t, uint16_t, const char*, const char*)	40	static
+../source/gui.cpp:81:10:void ValueDisplay::setValue(float)	16	static
+../source/gui.cpp:83:10:virtual void ValueDisplay::draw()	24	static
+../source/gui.cpp:121:5:Button::Button(uint16_t, uint16_t, uint16_t, uint16_t, const char*, Callback)	40	static
+../source/gui.cpp:125:10:virtual void Button::draw()	16	static
+../source/gui.cpp:133:10:virtual bool Button::handleTouch(uint16_t, uint16_t)	16	static
+../source/gui.cpp:159:5:Page::Page()	16	static
+../source/gui.cpp:161:10:void Page::addWidget(Widget*)	16	static
+../source/gui.cpp:164:10:void Page::drawAll()	24	static
+../source/gui.cpp:167:10:bool Page::handleTouch(uint16_t, uint16_t)	24	static
+../source/gui.cpp:172:10:void Page::setVisible(bool)	24	static
+../source/gui.cpp:188:5:Gui::Gui()	16	static
+../source/gui.cpp:190:10:void Gui::addPage(Page*)	16	static
+../source/gui.cpp:193:13:uint8_t Gui::activePage() const	16	static
+../source/gui.cpp:195:10:void Gui::setActivePage(uint8_t)	16	static
+../source/gui.cpp:206:10:void Gui::update()	16	static
+../source/gui.cpp:207:10:void Gui::handleTouch(uint16_t, uint16_t)	16	static
+../source/gui.cpp:230:13:void onNav1()	8	static
+../source/gui.cpp:231:13:void onNav0()	8	static
+../source/gui.cpp:245:17:void gui_init()	8	static
+../source/gui.cpp:270:17:void gui_update()	8	static
+../source/gui.cpp:271:17:void gui_touch(uint16_t, uint16_t)	16	static
+../source/gui.cpp:273:17:void gui_setTemperature(float)	16	static
+../source/gui.cpp:277:17:void gui_setHumidity(float)	16	static
+../source/gui.cpp:281:17:void gui_setPressure(float)	16	static
+../source/gui.cpp:117:7:Button::~Button()	16	static
+../source/gui.cpp:117:7:virtual Button::~Button()	16	static
+../source/gui.cpp:75:7:ValueDisplay::~ValueDisplay()	16	static
+../source/gui.cpp:75:7:virtual ValueDisplay::~ValueDisplay()	16	static
+../source/gui.cpp:52:7:Label::~Label()	16	static
+../source/gui.cpp:52:7:virtual Label::~Label()	16	static
+../source/gui.cpp:284:1:void __static_initialization_and_destruction_0()	24	static
+../source/gui.cpp:284:1:void __static_initialization_and_destruction_1()	8	static
+../source/gui.cpp:284:1:cpp)	8	static
+../source/gui.cpp:284:1:cpp)	8	static

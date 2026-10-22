@@ -1,0 +1,4 @@
+../lib/libleguan/source/peripherals/internal/serial.c:36:10:SERIAL_Init	1
+../lib/libleguan/source/peripherals/internal/serial.c:43:6:SERIAL_Stream	2
+../lib/libleguan/source/peripherals/internal/serial.c:50:10:SERIAL_Read	4
+../lib/libleguan/source/peripherals/internal/serial.c:63:10:SERIAL_Write	3

@@ -1,0 +1,7 @@
+../lib/libleguan/source/peripherals/internal/gpio.c:30:10:GPIO_Init	1
+../lib/libleguan/source/peripherals/internal/gpio.c:46:6:GPIO_SetSpeed	1
+../lib/libleguan/source/peripherals/internal/gpio.c:55:6:GPIO_SetPullResistor	1
+../lib/libleguan/source/peripherals/internal/gpio.c:64:6:GPIO_SetMode	1
+../lib/libleguan/source/peripherals/internal/gpio.c:73:6:GPIO_GetValue	2
+../lib/libleguan/source/peripherals/internal/gpio.c:82:6:GPIO_SetValue	3
+../lib/libleguan/source/peripherals/internal/gpio.c:92:6:GPIO_Toggle	1

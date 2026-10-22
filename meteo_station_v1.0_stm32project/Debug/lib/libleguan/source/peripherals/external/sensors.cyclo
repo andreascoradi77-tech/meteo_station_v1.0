@@ -1,0 +1,7 @@
+../lib/libleguan/source/peripherals/external/sensors.c:34:10:SENSOR_Init	5
+../lib/libleguan/source/peripherals/external/sensors.c:44:10:SENSOR_GetTemperature	1
+../lib/libleguan/source/peripherals/external/sensors.c:48:10:SENSOR_GetPressure	1
+../lib/libleguan/source/peripherals/external/sensors.c:52:10:SENSOR_GetHumidity	1
+../lib/libleguan/source/peripherals/external/sensors.c:56:10:SENSOR_GetColor	1
+../lib/libleguan/source/peripherals/external/sensors.c:60:10:SENSOR_GetAcceleration	1
+../lib/libleguan/source/peripherals/external/sensors.c:64:10:SENSOR_GetRotation	1

@@ -1,0 +1,5 @@
+../lib/libleguan/include/common/intrinsics.h:70:13:LEGUAN_Unreachable	0
+../lib/libleguan/source/peripherals/internal/spi.c:41:10:SPI_Init	1
+../lib/libleguan/source/peripherals/internal/spi.c:48:10:SPI_Read	4
+../lib/libleguan/source/peripherals/internal/spi.c:58:10:SPI_Write	4
+../lib/libleguan/source/peripherals/internal/spi.c:68:10:SPI_WriteRead	5

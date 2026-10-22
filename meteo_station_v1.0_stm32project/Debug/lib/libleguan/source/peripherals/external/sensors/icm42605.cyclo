@@ -1,0 +1,5 @@
+../lib/libleguan/source/peripherals/external/sensors/icm42605.c:177:17:write	1
+../lib/libleguan/source/peripherals/external/sensors/icm42605.c:187:17:writeRead	1
+../lib/libleguan/source/peripherals/external/sensors/icm42605.c:197:10:ICM42605_Init	19
+../lib/libleguan/source/peripherals/external/sensors/icm42605.c:344:10:ICM42605_GetRotation	3
+../lib/libleguan/source/peripherals/external/sensors/icm42605.c:360:10:ICM42605_GetAcceleration	3
