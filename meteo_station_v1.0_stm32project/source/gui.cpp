@@ -7,7 +7,10 @@
 // =====================================================================
 static const uint16_t SCREEN_W = 800;
 static const uint16_t SCREEN_H = 480;
-
+// =====================================================================
+// Time Buffer
+// =====================================================================
+static char g_timeBuf[16] = "--:--:--";
 // =====================================================================
 // Farben – alle vom Typ color_t (nicht uint32_t!)
 // =====================================================================
@@ -222,7 +225,8 @@ static Page   g_page0;
 static Page   g_page1;
 
 // Page 0 – Hauptseite
-static Label        lbl_title0(20, 10, 400, 30, "WETTERSTATION", COL_HEADER_FG);
+static Label   lbl_title0(20, 10, 400, 30, "WETTERSTATION", COL_HEADER_FG);
+static Label   lbl_time(660, 15, 130, 30, g_timeBuf, COL_HEADER_FG);
 static ValueDisplay vd_temp( 20,  80, 240, 130, "Temperatur",  "C");
 static ValueDisplay vd_hum (280,  80, 240, 130, "Luftfeuchte", "%");
 static ValueDisplay vd_pres(540,  80, 240, 130, "Luftdruck",   "hPa");
@@ -237,6 +241,7 @@ static Button btn_dummy2(540, 380, 220, 70, "Einstellungen", NULL);
 // Page 1 – Detailseite
 static Label  lbl_title1(20, 10, 400, 30, "DETAILS", COL_HEADER_FG);
 static Label  lbl_info  (40, 100, 700, 30, "Details kommen spaeter hierhin.", COL_TEXT);
+
 static Button btn_back  (20, 380, 220, 70, "< Zurueck", onNav0);
 
 // =====================================================================
@@ -256,10 +261,12 @@ extern "C" void gui_init(void) {
     g_page0.addWidget(&btn_toP1);
     g_page0.addWidget(&btn_dummy);
     g_page0.addWidget(&btn_dummy2);
+    g_page0.addWidget(&lbl_time); 
 
     g_page1.addWidget(&lbl_title1);
     g_page1.addWidget(&lbl_info);
     g_page1.addWidget(&btn_back);
+    g_page1.addWidget(&lbl_time); 
 
     g_gui.addPage(&g_page0);
     g_gui.addPage(&g_page1);
@@ -281,4 +288,8 @@ extern "C" void gui_setHumidity(float h) {
 extern "C" void gui_setPressure(float p) {
     vd_pres.setValue(p);
     if (g_gui.activePage() == 0) vd_pres.draw();
+}
+extern "C" void gui_setTime(const char* timeStr) {
+    snprintf(g_timeBuf, sizeof(g_timeBuf), "%s", timeStr);
+    lbl_time.draw();   // ? immer zeichnen, da auf beiden Pages
 }

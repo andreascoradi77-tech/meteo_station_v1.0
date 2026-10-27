@@ -129,6 +129,8 @@ int main() {
                 y_old = y_new;
             }
         }
+        
+       
 
         gui_update();
         CORE_Delay(20);   // 20 Hz reicht völlig

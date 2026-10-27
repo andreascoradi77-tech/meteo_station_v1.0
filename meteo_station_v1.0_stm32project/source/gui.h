@@ -25,6 +25,7 @@ void gui_touch(uint16_t x, uint16_t y);
 void gui_setTemperature(float t);
 void gui_setHumidity(float h);
 void gui_setPressure(float p);
+void gui_setTime(const char* timeStr);
 
 #ifdef __cplusplus
 }
