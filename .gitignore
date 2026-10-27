@@ -1,1 +1,5 @@
-/.metadata/
+# Ignoriere alles im stm32project Ordner
+meteo_station_v1.0_stm32project/*
+
+# Aber behalte den source Ordner und dessen Inhalt!
+!meteo_station_v1.0_stm32project/source/
