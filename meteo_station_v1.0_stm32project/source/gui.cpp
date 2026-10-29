@@ -25,6 +25,31 @@ static const color_t COL_BTN_BG     = ColorBlue;
 static const color_t COL_BTN_FG     = ColorWhite;
 static const color_t COL_BTN_PRESS  = ColorGreen;
 
+
+// =====================================================================
+// Rahmen (Empty Rectangle) zeichnen:
+// =====================================================================
+result_t LCD_EmptyRect(uint16_t x, uint16_t y, uint16_t width,
+                        uint16_t height, uint16_t border_width,
+                        color_t border_color) {
+    // Check for invalid arguments
+    if(border_width * 2 >= width || border_width * 2 >= height ||
+        width == 0 || height == 0 || border_width == 0 || 
+        x > LCD_WIDTH || y > LCD_HEIGHT ||
+        x + width > LCD_WIDTH || y + height > LCD_HEIGHT
+    ) return RESULT_INVALID_ARGUMENTS;
+    
+    LCD_SetForegroundColor(border_color);
+    R_TRY(LCD_Rect(x, y, width, border_width));                           // Top
+    R_TRY(LCD_Rect(x, y, border_width, height));                          // Left
+    R_TRY(LCD_Rect(x, y + height - border_width, width, border_width));   // Bottom
+    R_TRY(LCD_Rect(x + width - border_width, y, border_width, height));   // Right
+
+    LCD_SetBackgroundColor(ColorBlack);
+    return RESULT_SUCCESS;
+}
+
+
 // =====================================================================
 // Widget (Basisklasse)
 // =====================================================================
@@ -86,12 +111,10 @@ public:
     void draw() override {
         if (!m_visible) return;
 
-        // Äußerer Rand
+
+        // Leeres Rechteck mit Rahmen zeichnen
         LCD_SetForegroundColor(COL_BOX_BORDER);
-        LCD_Rect(m_x, m_y, m_w, m_h);
-        // Innenbereich
-        LCD_SetForegroundColor(COL_BOX_BG);
-        LCD_Rect(m_x + 2, m_y + 2, m_w - 4, m_h - 4);
+        LCD_EmptyRect(m_x, m_y, m_w, m_h, 2, COL_BOX_BORDER);        
 
         // Titel
         LCD_SetForegroundColor(COL_TEXT);
