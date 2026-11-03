@@ -1,4 +1,4 @@
-../lib/hal/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h:323:26:SWAPBYTE	1
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h:323:26:SWAPBYTE	1
 ../lib/hal/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c:100:20:USBD_StdDevReq	12
 ../lib/hal/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c:163:20:USBD_StdItfReq	9
 ../lib/hal/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c:214:20:USBD_StdEPReq	35

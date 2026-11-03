@@ -1,4 +1,4 @@
-../lib/libleguan/include/common/intrinsics.h:70:13:LEGUAN_Unreachable	4	static
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/libleguan/include/common/intrinsics.h:70:13:LEGUAN_Unreachable	4	static
 ../lib/libleguan/source/peripherals/external/lcd.c:70:10:LCD_SetDrawArea	32	static
 ../lib/libleguan/source/peripherals/external/lcd.c:93:6:LCD_EnableDrawMode	16	static
 ../lib/libleguan/source/peripherals/external/lcd.c:97:10:LCD_Init	24	static

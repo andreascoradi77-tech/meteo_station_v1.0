@@ -1,8 +1,10 @@
 #include <leguan.h>
 #include <cube.h>
 #include "gui.h"
-
+#include <string.h>
+#include <stdlib.h>
 #include <stdio.h>
+#include "usart.h"
 
 // ============ Button-Callbacks (C++-kompatibel via extern "C") ============
 // Diese werden in gui.cpp als Funktionspointer genutzt.
@@ -10,6 +12,15 @@
 // Vorwärtsdeklaration der Page-Umschaltfunktionen
 void showPage0(void);
 void showPage1(void);
+static void verarbeite_zeit_antwort(char* antwort);
+static void requestTimeFromESP(void); 
+static void update_lokale_uhr(void);
+
+
+// Zustand für die lokale Uhr
+static uint32_t basis_sekunden = 0;      // Sekunden seit Mitternacht (vom ESP32)
+static uint32_t letzter_sync_tick = 0;   // Wann wir das letzte Mal synchronisiert haben
+static int letzte_angezeigte_sekunde = -1; // Um unnötiges Neuzeichnen zu verhindern
 
 // ============ Main ============
 int main() {
@@ -58,7 +69,8 @@ int main() {
 
         //char* pres_text[20];
 
-
+		uint32_t letzteZeitAbfrage = 0;
+		const uint32_t ZEIT_INTERVALL = 60000; // alle 5 Sekunden
 
 
 
@@ -130,9 +142,93 @@ int main() {
             }
         }
         
+        if (HAL_GetTick() - letzteZeitAbfrage > ZEIT_INTERVALL) {
+    		letzteZeitAbfrage = HAL_GetTick();
+    		requestTimeFromESP();
+		}
        
-
+        update_lokale_uhr();
         gui_update();
         CORE_Delay(20);   // 20 Hz reicht völlig
     }
 return 0 ;}
+
+// Wandelt einen Unix-Timestamp (z.B. 1761573785) in "HH:MM:SS" um
+static void verarbeite_zeit_antwort(char* antwort) {
+    if (antwort[0] == 'E') return; // "ERR NO_TIME" ignorieren
+
+    long ts = atol(antwort);
+    if (ts < 1000000000) return; // Unplausibler Wert
+
+    // NEU: Sekunden seit Mitternacht (UTC) und den aktuellen Tick speichern
+    basis_sekunden = ts % 86400;
+    letzter_sync_tick = HAL_GetTick();
+
+    // Sofort einmal updaten, damit die neue Zeit ohne Verzögerung erscheint
+    letzte_angezeigte_sekunde = -1;
+    update_lokale_uhr();
+}
+
+// Fragt den ESP32 nach der Zeit
+static void requestTimeFromESP(void) {
+    // 1. ALTEN MÜLL AUS DEM PUFFER WERFEN (Wichtig!)
+    uint8_t dummy;
+    // Lese so lange, bis nichts mehr da ist (Timeout auf 1 ms)
+    while (HAL_UART_Receive(&huart1, &dummy, 1, 1) == HAL_OK) { }
+    // Fehler-Flag vom STM32 löschen (verhindert Blockade)
+    __HAL_UART_CLEAR_OREFLAG(&huart1);
+
+    // 2. Befehl senden
+    const char* cmd = "get time\n";
+    HAL_UART_Transmit(&huart1, (uint8_t*)cmd, strlen(cmd), 100);
+
+    // 3. Antwort empfangen
+    char rxBuf[32];
+    int idx = 0;
+    uint8_t c;
+
+    while (idx < sizeof(rxBuf) - 1) {
+        if (HAL_UART_Receive(&huart1, &c, 1, 50) == HAL_OK) {
+            // Nur auf \n reagieren. \r wird ignoriert!
+            if (c == '\n') {
+                break; // Zeilenende erreicht, Schleife verlassen
+            }
+            if (c != '\r') {
+                rxBuf[idx++] = (char)c; // Zeichen speichern
+            }
+        } else {
+            break; // Timeout
+        }
+    }
+    rxBuf[idx] = '\0'; // String terminieren
+
+    // 4. Wenn Daten da sind, umrechnen und an GUI geben
+    if (idx > 0) {
+        verarbeite_zeit_antwort(rxBuf);
+    }
+}
+// Lässt die Uhr zwischen den ESP32-Updates lokal weiterlaufen
+static void update_lokale_uhr(void) {
+    // Wenn wir noch keine Zeit vom ESP32 haben, machen wir nichts
+    if (basis_sekunden == 0) return;
+
+    // Wie viele Sekunden sind seit dem letzten Sync vergangen?
+    uint32_t vergangene_ms = HAL_GetTick() - letzter_sync_tick;
+    uint32_t vergangene_sekunden = vergangene_ms / 1000;
+
+    // Aktuelle Uhrzeit berechnen (modulo 86400 verhindert Überlauf nach 24h)
+    uint32_t aktuelle_sekunde = (basis_sekunden + vergangene_sekunden) % 86400;
+
+    // Nur neu zeichnen, wenn sich die Sekunde auch wirklich geändert hat!
+    if (aktuelle_sekunde != letzte_angezeigte_sekunde) {
+        letzte_angezeigte_sekunde = aktuelle_sekunde;
+
+        int h = aktuelle_sekunde / 3600;
+        int m = (aktuelle_sekunde % 3600) / 60;
+        int s = aktuelle_sekunde % 60;
+
+        char timeStr[16];
+        snprintf(timeStr, sizeof(timeStr), "%02d:%02d:%02d", h, m, s);
+        gui_setTime(timeStr);
+    }
+}

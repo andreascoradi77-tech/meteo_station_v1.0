@@ -46,20 +46,20 @@
 									<listOptionValue builtIn="false" value="STM32H743xx"/>
 								</option>
 								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.includepaths.767492951" name="Include paths (-I)" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.includepaths" useByScannerDiscovery="false" valueType="includePath">
-									<listOptionValue builtIn="false" value="../lib/hal/Core/Inc"/>
-									<listOptionValue builtIn="false" value="../lib/libleguan/include"/>
-									<listOptionValue builtIn="false" value="../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc"/>
-									<listOptionValue builtIn="false" value="../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy"/>
-									<listOptionValue builtIn="false" value="../lib/hal/Drivers/CMSIS/Device/ST/STM32H7xx/Include"/>
-									<listOptionValue builtIn="false" value="../lib/hal/Drivers/CMSIS/Include"/>
-									<listOptionValue builtIn="false" value="../lib/hal/FATFS/Target"/>
-									<listOptionValue builtIn="false" value="../lib/hal/FATFS/App"/>
-									<listOptionValue builtIn="false" value="../lib/hal/USB_DEVICE/App"/>
-									<listOptionValue builtIn="false" value="../lib/hal/USB_DEVICE/Target"/>
-									<listOptionValue builtIn="false" value="../lib/hal/Middlewares/Third_Party/FatFs/src"/>
-									<listOptionValue builtIn="false" value="../lib/hal/Middlewares/ST/STM32_USB_Device_Library/Core/Inc"/>
-									<listOptionValue builtIn="false" value="../lib/hal/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc"/>
-									<listOptionValue builtIn="false" value="../include"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/lib/hal/Drivers/CMSIS/Device/ST/STM32H7xx/Include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/lib/libleguan/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/lib/hal/Drivers/CMSIS/Include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/lib/hal/Core/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/lib/hal/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/lib/hal/Middlewares/ST/STM32_USB_Device_Library/Core/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/lib/hal/Middlewares/Third_Party/FatFs/src&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/lib/hal/USB_DEVICE/Target&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/lib/hal/USB_DEVICE/App&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/lib/hal/FATFS/App&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/lib/hal/FATFS/Target&quot;"/>
 								</option>
 								<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.languagestandard.426242706" name="Language standard" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.languagestandard" useByScannerDiscovery="true" value="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.languagestandard.value.gnu17" valueType="enumerated"/>
 								<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.warnings.extra.238813702" name="Enable extra warning flags (-Wextra)" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.warnings.extra" useByScannerDiscovery="false" value="false" valueType="boolean"/>
@@ -76,20 +76,20 @@
 								<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.option.debuglevel.1261369589" name="Debug level" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.option.debuglevel" useByScannerDiscovery="false" value="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.option.debuglevel.value.g3" valueType="enumerated"/>
 								<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.option.optimization.level.1279211721" name="Optimization level" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.option.optimization.level" useByScannerDiscovery="false"/>
 								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.option.includepaths.1085260263" name="Include paths (-I)" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.option.includepaths" useByScannerDiscovery="false" valueType="includePath">
-									<listOptionValue builtIn="false" value="../lib/hal/Core/Inc"/>
-									<listOptionValue builtIn="false" value="../lib/libleguan/include"/>
-									<listOptionValue builtIn="false" value="../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc"/>
-									<listOptionValue builtIn="false" value="../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy"/>
-									<listOptionValue builtIn="false" value="../lib/hal/Drivers/CMSIS/Device/ST/STM32H7xx/Include"/>
-									<listOptionValue builtIn="false" value="../lib/hal/Drivers/CMSIS/Include"/>
-									<listOptionValue builtIn="false" value="../lib/hal/FATFS/Target"/>
-									<listOptionValue builtIn="false" value="../lib/hal/FATFS/App"/>
-									<listOptionValue builtIn="false" value="../lib/hal/USB_DEVICE/App"/>
-									<listOptionValue builtIn="false" value="../lib/hal/USB_DEVICE/Target"/>
-									<listOptionValue builtIn="false" value="../lib/hal/Middlewares/Third_Party/FatFs/src"/>
-									<listOptionValue builtIn="false" value="../lib/hal/Middlewares/ST/STM32_USB_Device_Library/Core/Inc"/>
-									<listOptionValue builtIn="false" value="../lib/hal/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc"/>
-									<listOptionValue builtIn="false" value="../include"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/lib/hal/Core/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/lib/libleguan/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/lib/hal/Drivers/CMSIS/Device/ST/STM32H7xx/Include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/lib/hal/Drivers/CMSIS/Include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/lib/hal/FATFS/Target&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/lib/hal/FATFS/App&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/lib/hal/USB_DEVICE/App&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/lib/hal/USB_DEVICE/Target&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/lib/hal/Middlewares/Third_Party/FatFs/src&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/lib/hal/Middlewares/ST/STM32_USB_Device_Library/Core/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/lib/hal/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/include&quot;"/>
 								</option>
 								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.option.definedsymbols.1555502050" name="Define symbols (-D)" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.option.definedsymbols" useByScannerDiscovery="false" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="DEBUG"/>
@@ -106,7 +106,7 @@
 								</inputType>
 							</tool>
 							<tool id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.linker.1023898283" name="MCU G++ Linker" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.linker">
-								<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.linker.option.script.1684220763" name="Linker Script (-T)" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.linker.option.script" value="C:\Users\stefa\OneDrive\Documents\GitHub\meteo_station_v1.0\meteo_station_v1.0_stm32project\STM32H743ZITX_FLASH.ld" valueType="string"/>
+								<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.linker.option.script.1684220763" name="Linker Script (-T)" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.linker.option.script" value="${ProjDirPath}/STM32H743ZITX_FLASH.ld" valueType="string"/>
 								<inputType id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.linker.input.2005276432" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
@@ -225,6 +225,14 @@
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
 	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="Debug">
+			<resource resourceType="PROJECT" workspacePath="/LeguanBSP"/>
+		</configuration>
+		<configuration configurationName="Release">
+			<resource resourceType="PROJECT" workspacePath="/LeguanBSP"/>
+		</configuration>
+	</storageModule>
 	<storageModule moduleId="scannerConfiguration">
 		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
 		<scannerConfigBuildInfo instanceId="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.debug.2136391218;com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.debug.2136391218.;com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.80644427;com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c.571032624">
@@ -233,13 +241,8 @@
 		<scannerConfigBuildInfo instanceId="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.release.672860548;com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.release.672860548.;com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.104529805;com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c.1854447656">
 			<autodiscovery enabled="false" problemReportingEnabled="true" selectedProfileId=""/>
 		</scannerConfigBuildInfo>
-	</storageModule>
-	<storageModule moduleId="refreshScope" versionNumber="2">
-		<configuration configurationName="Debug">
-			<resource resourceType="PROJECT" workspacePath="/LeguanBSP"/>
-		</configuration>
-		<configuration configurationName="Release">
-			<resource resourceType="PROJECT" workspacePath="/LeguanBSP"/>
-		</configuration>
+		<scannerConfigBuildInfo instanceId="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.debug.2136391218;com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.debug.2136391218.;com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.457292146;com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.input.cpp.1942012429">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
 	</storageModule>
 </cproject>

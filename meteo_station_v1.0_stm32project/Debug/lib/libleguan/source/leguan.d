@@ -1,148 +1,149 @@
 lib/libleguan/source/leguan.o: ../lib/libleguan/source/leguan.c \
- ../lib/libleguan/include/leguan.h ../lib/libleguan/include/common/core.h \
- ../lib/libleguan/include/common/types.h \
- ../lib/libleguan/include/common/errors.h \
- ../lib/libleguan/include/common/attributes.h \
- ../lib/libleguan/include/common/intrinsics.h \
- ../lib/libleguan/include/common/mmio.h \
- ../lib/libleguan/include/common/logger.h \
- ../lib/libleguan/include/peripherals/internal/adc.h \
- ../lib/libleguan/include/peripherals/internal/dac.h \
- ../lib/libleguan/include/common/processor.h \
- ../lib/hal/Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h \
- ../lib/hal/Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h743xx.h \
- ../lib/hal/Drivers/CMSIS/Include/core_cm7.h \
- ../lib/hal/Drivers/CMSIS/Include/cmsis_version.h \
- ../lib/hal/Drivers/CMSIS/Include/cmsis_compiler.h \
- ../lib/hal/Drivers/CMSIS/Include/cmsis_gcc.h \
- ../lib/hal/Drivers/CMSIS/Include/mpu_armv7.h \
- ../lib/hal/Drivers/CMSIS/Device/ST/STM32H7xx/Include/system_stm32h7xx.h \
- ../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h \
- ../lib/hal/Core/Inc/stm32h7xx_hal_conf.h \
- ../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h \
- ../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h \
- ../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
- ../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc_ex.h \
- ../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_gpio.h \
- ../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_gpio_ex.h \
- ../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma.h \
- ../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma_ex.h \
- ../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h \
- ../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma2d.h \
- ../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h \
- ../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h \
- ../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc.h \
- ../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_adc.h \
- ../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc_ex.h \
- ../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_fdcan.h \
- ../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h \
- ../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac_ex.h \
- ../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h \
- ../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash_ex.h \
- ../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_hsem.h \
- ../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_sram.h \
- ../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_fmc.h \
- ../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c.h \
- ../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c_ex.h \
- ../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2s.h \
- ../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr.h \
- ../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h \
- ../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_sd.h \
- ../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_sdmmc.h \
- ../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_delayblock.h \
- ../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_sd_ex.h \
- ../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_sdram.h \
- ../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_spi.h \
- ../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_spi_ex.h \
- ../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h \
- ../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h \
- ../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pcd.h \
- ../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usb.h \
- ../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pcd_ex.h \
- ../lib/libleguan/include/peripherals/internal/gpio.h \
- ../lib/libleguan/include/peripherals/internal/serial.h \
- ../lib/libleguan/include/peripherals/internal/i2c.h \
- ../lib/libleguan/include/peripherals/internal/spi.h \
- ../lib/libleguan/include/peripherals/internal/ram.h \
- ../lib/libleguan/include/peripherals/external/fpga.h \
- ../lib/libleguan/include/common/color.h \
- ../lib/libleguan/include/peripherals/external/lcd.h \
- ../lib/libleguan/include/peripherals/external/sensors.h \
- ../lib/libleguan/include/peripherals/external/sensors/lps22bh.h \
- ../lib/libleguan/include/peripherals/external/sensors/sht40.h \
- ../lib/libleguan/include/peripherals/external/sensors/tcs34725.h \
- ../lib/libleguan/include/peripherals/external/sensors/icm42605.h
-../lib/libleguan/include/leguan.h:
-../lib/libleguan/include/common/core.h:
-../lib/libleguan/include/common/types.h:
-../lib/libleguan/include/common/errors.h:
-../lib/libleguan/include/common/attributes.h:
-../lib/libleguan/include/common/intrinsics.h:
-../lib/libleguan/include/common/mmio.h:
-../lib/libleguan/include/common/logger.h:
-../lib/libleguan/include/peripherals/internal/adc.h:
-../lib/libleguan/include/peripherals/internal/dac.h:
-../lib/libleguan/include/common/processor.h:
-../lib/hal/Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:
-../lib/hal/Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h743xx.h:
-../lib/hal/Drivers/CMSIS/Include/core_cm7.h:
-../lib/hal/Drivers/CMSIS/Include/cmsis_version.h:
-../lib/hal/Drivers/CMSIS/Include/cmsis_compiler.h:
-../lib/hal/Drivers/CMSIS/Include/cmsis_gcc.h:
-../lib/hal/Drivers/CMSIS/Include/mpu_armv7.h:
-../lib/hal/Drivers/CMSIS/Device/ST/STM32H7xx/Include/system_stm32h7xx.h:
-../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:
-../lib/hal/Core/Inc/stm32h7xx_hal_conf.h:
-../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:
-../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:
-../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:
-../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc_ex.h:
-../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_gpio.h:
-../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_gpio_ex.h:
-../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma.h:
-../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma_ex.h:
-../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h:
-../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma2d.h:
-../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h:
-../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h:
-../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc.h:
-../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_adc.h:
-../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc_ex.h:
-../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_fdcan.h:
-../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h:
-../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac_ex.h:
-../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h:
-../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash_ex.h:
-../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_hsem.h:
-../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_sram.h:
-../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_fmc.h:
-../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c.h:
-../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c_ex.h:
-../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2s.h:
-../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr.h:
-../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h:
-../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_sd.h:
-../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_sdmmc.h:
-../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_delayblock.h:
-../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_sd_ex.h:
-../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_sdram.h:
-../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_spi.h:
-../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_spi_ex.h:
-../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:
-../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h:
-../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pcd.h:
-../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usb.h:
-../lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pcd_ex.h:
-../lib/libleguan/include/peripherals/internal/gpio.h:
-../lib/libleguan/include/peripherals/internal/serial.h:
-../lib/libleguan/include/peripherals/internal/i2c.h:
-../lib/libleguan/include/peripherals/internal/spi.h:
-../lib/libleguan/include/peripherals/internal/ram.h:
-../lib/libleguan/include/peripherals/external/fpga.h:
-../lib/libleguan/include/common/color.h:
-../lib/libleguan/include/peripherals/external/lcd.h:
-../lib/libleguan/include/peripherals/external/sensors.h:
-../lib/libleguan/include/peripherals/external/sensors/lps22bh.h:
-../lib/libleguan/include/peripherals/external/sensors/sht40.h:
-../lib/libleguan/include/peripherals/external/sensors/tcs34725.h:
-../lib/libleguan/include/peripherals/external/sensors/icm42605.h:
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/libleguan/include/leguan.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/libleguan/include/common/core.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/libleguan/include/common/types.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/libleguan/include/common/errors.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/libleguan/include/common/attributes.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/libleguan/include/common/intrinsics.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/libleguan/include/common/mmio.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/libleguan/include/common/logger.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/libleguan/include/peripherals/internal/adc.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/libleguan/include/peripherals/internal/dac.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/libleguan/include/common/processor.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h743xx.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/CMSIS/Include/core_cm7.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/CMSIS/Include/cmsis_version.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/CMSIS/Include/cmsis_compiler.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/CMSIS/Include/cmsis_gcc.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/CMSIS/Include/mpu_armv7.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/CMSIS/Device/ST/STM32H7xx/Include/system_stm32h7xx.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Core/Inc/stm32h7xx_hal_conf.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc_ex.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_gpio.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_gpio_ex.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma_ex.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma2d.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_adc.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc_ex.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_fdcan.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac_ex.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash_ex.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_hsem.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_sram.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_fmc.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c_ex.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2s.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_sd.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_sdmmc.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_delayblock.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_sd_ex.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_sdram.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_spi.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_spi_ex.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pcd.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usb.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pcd_ex.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/libleguan/include/peripherals/internal/gpio.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/libleguan/include/peripherals/internal/serial.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/libleguan/include/peripherals/internal/i2c.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/libleguan/include/peripherals/internal/spi.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/libleguan/include/peripherals/internal/ram.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/libleguan/include/peripherals/external/fpga.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/libleguan/include/common/color.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/libleguan/include/peripherals/external/lcd.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/libleguan/include/peripherals/external/sensors.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/libleguan/include/peripherals/external/sensors/lps22bh.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/libleguan/include/peripherals/external/sensors/sht40.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/libleguan/include/peripherals/external/sensors/tcs34725.h \
+ C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/libleguan/include/peripherals/external/sensors/icm42605.h
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/libleguan/include/leguan.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/libleguan/include/common/core.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/libleguan/include/common/types.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/libleguan/include/common/errors.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/libleguan/include/common/attributes.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/libleguan/include/common/intrinsics.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/libleguan/include/common/mmio.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/libleguan/include/common/logger.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/libleguan/include/peripherals/internal/adc.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/libleguan/include/peripherals/internal/dac.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/libleguan/include/common/processor.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h743xx.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/CMSIS/Include/core_cm7.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/CMSIS/Include/cmsis_version.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/CMSIS/Include/cmsis_compiler.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/CMSIS/Include/cmsis_gcc.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/CMSIS/Include/mpu_armv7.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/CMSIS/Device/ST/STM32H7xx/Include/system_stm32h7xx.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Core/Inc/stm32h7xx_hal_conf.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc_ex.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_gpio.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_gpio_ex.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma_ex.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma2d.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_adc.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc_ex.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_fdcan.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac_ex.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash_ex.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_hsem.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_sram.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_fmc.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c_ex.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2s.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_sd.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_sdmmc.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_delayblock.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_sd_ex.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_sdram.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_spi.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_spi_ex.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pcd.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usb.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/hal/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pcd_ex.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/libleguan/include/peripherals/internal/gpio.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/libleguan/include/peripherals/internal/serial.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/libleguan/include/peripherals/internal/i2c.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/libleguan/include/peripherals/internal/spi.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/libleguan/include/peripherals/internal/ram.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/libleguan/include/peripherals/external/fpga.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/libleguan/include/common/color.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/libleguan/include/peripherals/external/lcd.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/libleguan/include/peripherals/external/sensors.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/libleguan/include/peripherals/external/sensors/lps22bh.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/libleguan/include/peripherals/external/sensors/sht40.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/libleguan/include/peripherals/external/sensors/tcs34725.h:
+C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/lib/libleguan/include/peripherals/external/sensors/icm42605.h:

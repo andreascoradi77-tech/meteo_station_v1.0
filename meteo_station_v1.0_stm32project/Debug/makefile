@@ -72,34 +72,34 @@ $(wildcard ../makefile.init) \
 $(wildcard ../makefile.targets) \
 
 
-BUILD_ARTIFACT_NAME := Project Template Touch Screen
+BUILD_ARTIFACT_NAME := meteo_station_v1.0_stm32project
 BUILD_ARTIFACT_EXTENSION := elf
 BUILD_ARTIFACT_PREFIX :=
 BUILD_ARTIFACT := $(BUILD_ARTIFACT_PREFIX)$(BUILD_ARTIFACT_NAME)$(if $(BUILD_ARTIFACT_EXTENSION),.$(BUILD_ARTIFACT_EXTENSION),)
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXECUTABLES += \
-Project\ Template\ Touch\ Screen.elf \
+meteo_station_v1.0_stm32project.elf \
 
 MAP_FILES += \
-Project\ Template\ Touch\ Screen.map \
+meteo_station_v1.0_stm32project.map \
 
 SIZE_OUTPUT += \
 default.size.stdout \
 
 OBJDUMP_LIST += \
-Project\ Template\ Touch\ Screen.list \
+meteo_station_v1.0_stm32project.list \
 
 
 # All Target
 all: main-build
 
 # Main-build Target
-main-build: Project\ Template\ Touch\ Screen.elf secondary-outputs
+main-build: meteo_station_v1.0_stm32project.elf secondary-outputs
 
 # Tool invocations
-Project\ Template\ Touch\ Screen.elf Project\ Template\ Touch\ Screen.map: $(OBJS) $(USER_OBJS) C:\Users\stefa\OneDrive\Documents\GitHub\meteo_station_v1.0\meteo_station_v1.0_stm32project\STM32H743ZITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-g++ -o "Project Template Touch Screen.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"C:\Users\stefa\OneDrive\Documents\GitHub\meteo_station_v1.0\meteo_station_v1.0_stm32project\STM32H743ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Project Template Touch Screen.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+meteo_station_v1.0_stm32project.elf meteo_station_v1.0_stm32project.map: $(OBJS) $(USER_OBJS) C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/STM32H743ZITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-g++ -o "meteo_station_v1.0_stm32project.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"C:/BFH/meteo_station_v1.0/meteo_station_v1.0_stm32project/STM32H743ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="meteo_station_v1.0_stm32project.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -108,14 +108,14 @@ default.size.stdout: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	@echo 'Finished building: $@'
 	@echo ' '
 
-Project\ Template\ Touch\ Screen.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "Project Template Touch Screen.list"
+meteo_station_v1.0_stm32project.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "meteo_station_v1.0_stm32project.list"
 	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) Project\ Template\ Touch\ Screen.elf Project\ Template\ Touch\ Screen.list Project\ Template\ Touch\ Screen.map Project\\ Template\\ Touch\\ Screen.elf default.size.stdout
+	-$(RM) default.size.stdout meteo_station_v1.0_stm32project.elf meteo_station_v1.0_stm32project.list meteo_station_v1.0_stm32project.map
 	-@echo ' '
 
 secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST)
