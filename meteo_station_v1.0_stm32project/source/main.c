@@ -5,6 +5,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "usart.h"
+#include "plot.h"
+
 
 // ============ Button-Callbacks (C++-kompatibel via extern "C") ============
 // Diese werden in gui.cpp als Funktionspointer genutzt.
